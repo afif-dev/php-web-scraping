@@ -64,7 +64,7 @@ $result = json_decode($content);
 						</div>
 						
 						<hr/>
-						<p><small>Last update on <?= $result->date_modified; ?></small> | <a href="https://github.com/afif-dev/php-web-scraping" target="_blank">Github Source</a> - <a href="@https://twitter.com/afif_dev" class="link-secondary" target="_blank">@afif_dev</a></p>
+						<p><small>Last update on <?= $result->date_modified; ?></small> | <a href="https://github.com/afif-dev/php-web-scraping" target="_blank">Github Source</a> - <a href="https://twitter.com/afif_dev" class="link-secondary" target="_blank">@afif_dev</a></p>
 					</div>
 				</div>
 			</section>
