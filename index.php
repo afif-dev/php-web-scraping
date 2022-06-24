@@ -26,13 +26,13 @@ $result = json_decode($content);
 					<div class="col-lg-6 col-md-8 mx-auto">
 						<h1 class="fw-light"><?= $result->title; ?></h1>
 						<p class="lead text-muted">Web scraping <?= $result->title; ?> from other website.</p>
-						<p class="text-muted">In order to get site content, app require to run cron file in 'cron.php' daily or hourly.</p>
+						<p class="text-muted">In order to get site content, app require to run cron file in '/cron.php' daily or hourly.</p>
 						
 						<h3 class="fw-light my-4">Table Output</h3>
 						<div class="border shadow p-3 mb-5 bg-body rounded table-responsive">
 						<table class="table">
-							<thead class="thead-light">
-								<tr>
+  							<thead>
+								<tr class="table-primary">
 									<th scope="col">#</th>
 								<?php foreach($result->data as $key => $data):
 								if ($key == 0):
@@ -53,7 +53,7 @@ $result = json_decode($content);
 								</tr>		
 								<?php endforeach;?>
 							</tbody>
-							</table>
+						</table>
 						</div>
 						
 						<hr/>
@@ -64,7 +64,7 @@ $result = json_decode($content);
 						</div>
 						
 						<hr/>
-						<p><small>Last update on <?= $result->date_modified; ?></small></p>
+						<p><small>Last update on <?= $result->date_modified; ?></small> | <a href="https://github.com/afif-dev/php-web-scraping" target="_blank">Github Source</a> - <a href="@https://twitter.com/afif_dev" class="link-secondary" target="_blank">@afif_dev</a></p>
 					</div>
 				</div>
 			</section>
