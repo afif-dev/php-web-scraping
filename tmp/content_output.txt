@@ -2761,8 +2761,7 @@ $(document).ready(function() {
 </div></div>
 							</div>
 						  </div> 
-  <script async type="text/javascript" src="/_Incapsula_Resource?SWJIYLWA=719d34d31c8e3a6e6fffd425f7e032f3&ns=3&cb=1886820121"></script>
-</body>
+  </body>
 </html><script>
 $('.home-slide').slick(
 {
@@ -2778,4 +2777,4 @@ $('.home-slide').slick(
 });
 </script>
 
-wsc_date_modified: Friday, 24-Jun-22 05:21:21 UTC
+wsc_date_modified: Friday, 24-Jun-22 06:57:38 UTC
