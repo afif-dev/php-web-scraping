@@ -68,15 +68,11 @@ function filterContent($webscrap_file, $title="") {
 	}
 	if ($result["data"]){
 		$result["date_modified"] = $date_modified;
-		$result["success"] = true;
-		$result["message"] = "Successfuly, display data!";
-	}else{
-		$result["success"] = false;
-		$result["message"] = "Failed, display data!";
+		
+		// JSON Data Result
+		$json_result = json_encode($result);
+		// Save as JSON File
+		file_put_contents("data.json", $json_result);
 	}
-	// JSON Data Result
-	$json_result = json_encode($result);
-
-	file_put_contents("data.json", $json_result);
 }
 ?>
